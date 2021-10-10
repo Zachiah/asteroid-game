@@ -106,7 +106,7 @@ k.scene("game", () => {
       k.sprite("asteroid", {
         anim: "go",
       }),
-      k.scale(0.3),
+      k.scale(k.rand(0.2,0.6)),
       k.pos(k.width(), k.rand(0, k.height())),
       k.origin("center"),
       k.area(),
@@ -151,7 +151,7 @@ k.scene("game", () => {
       ]);
     } else {
       k.add([
-        k.rect(40, 6),
+        k.rect(60, 10),
         k.origin("center"),
         k.color(255, 255, 255),
         k.pos(ship.pos.x, ship.pos.y),
